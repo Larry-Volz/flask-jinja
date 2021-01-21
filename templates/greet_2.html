@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings v.2</title>
+    <style>
+        li, .compliment  {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Greetings {{username}}</h1>
+    {% if wants=="on" %}
+    <table>
+        <tr>
+            <td>
+                <iframe src="https://giphy.com/embed/hvp4lPi0AwksT3468k" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mmsuk-hvp4lPi0AwksT3468k">via GIPHY</a></p>
+        
+            </td>
+            <td>
+                <div class="compliment">You are&nbsp;</div>
+                {% for compliment in compliments%}
+                <li>{{compliment}}</li>
+                {% endfor %}
+            </td>
+        </tr>
+        
+        <ul>
+            
+        </ul>
+    </table>    
+    {% endif %}
+</html>

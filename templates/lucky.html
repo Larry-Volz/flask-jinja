@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number</title>
+</head>
+<body>
+    <h1>Your lucky number is {{lucky_num}}</h1>
+    <h2 style="color:blue;">{{msg}}</h2>
+    {% if lucky_num == 7  %}
+        <h2>#7 is my lucky number too!</h2>
+        <iframe src="https://giphy.com/embed/l378rGBRtaCzDD6zm" width="480" height="379" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pixel-color-l378rGBRtaCzDD6zm">via GIPHY</a></p>
+    {% elif lucky_num == 0 %}
+        <h2> {{lucky_num}} is not as lucky as #7</h2>
+        <iframe src="https://giphy.com/embed/26gs9hWZig4XobSTe" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-numbers-gilphabet-26gs9hWZig4XobSTe">via GIPHY</a></p>
+    
+    {% elif lucky_num ==1 %}
+        <iframe src="https://giphy.com/embed/l0ExncehJzexFpRHq" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-numbers-gilphabet-l0ExncehJzexFpRHq">via GIPHY</a></p>
+
+    {% elif lucky_num ==2 %}
+        <iframe src="https://giphy.com/embed/26gsqQxPQXHBiBEUU" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-numbers-gilphabet-26gsqQxPQXHBiBEUU">via GIPHY</a></p>
+
+    {% elif lucky_num ==4 %}
+        <iframe src="https://giphy.com/embed/d1E1szXDsHUs3WvK" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-numbers-gilphabet-d1E1szXDsHUs3WvK">via GIPHY</a></p>
+
+        {% elif lucky_num == 5 %}
+        <iframe src="https://giphy.com/embed/l0ExvMqtnw7aTzPCE" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-numbers-gilphabet-l0ExvMqtnw7aTzPCE">via GIPHY</a></p>
+
+        {% elif lucky_num ==6 %}
+        <iframe src="https://giphy.com/embed/l0Ex9pftnvPgw0nPa" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-numbers-gilphabet-l0Ex9pftnvPgw0nPa">via GIPHY</a></p>studiosoriginals-numbers-gilphabet-26gsqQxPQXHBiBEUU">via GIPHY</a></p>
+    {% endif %} 
+</body>
+</html>
