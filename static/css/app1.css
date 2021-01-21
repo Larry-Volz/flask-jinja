@@ -1,0 +1,34 @@
+body {
+    background-color: tan;
+}
+
+h1 {
+    color: purple;
+}
+
+li, .compliment  {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.navbar {
+    background-color: black; /*??? why not working*/
+    padding: 14px 16px;
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 7px 8px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:hover {
+    color: purple;
+}
+
+.content {
+    margin-left: 14px;
+}

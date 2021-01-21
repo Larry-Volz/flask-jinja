@@ -13,6 +13,8 @@ toolbar = DebugToolbarExtension(app)
 def show_form():
     return render_template('form.html')
 
+#---------------------------------------------- GREET2 COMPLIMENTS ---------------------------------------------------
+
 COMPLIMENTS = ["nearly cool","borderline clever","tenacious","awesome","not-nearly-as-dumb as people say", "smelly... but in a good(ish) way", "audacious","well-mannered for your level of class"]
 
 @app.route('/greet')
@@ -33,8 +35,9 @@ def get_greeting_2():
     username=request.args["username"]
     wants_compliments=request.args.get("wants_compliments")
     nice_things = sample(COMPLIMENTS, 3) #from random
-
     return render_template('greet_2.html', username=username, wants=wants_compliments, compliments=nice_things, idx=idx)
+
+#----------------------------------------------------------------------------------------------------------------------
 
 
 """

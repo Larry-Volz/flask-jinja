@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greetings v.2</title>
-    <style>
-        li, .compliment  {
-            font-size: 2rem;
-            font-weight: 500;
-        }
-        
-    </style>
-</head>
-<body>
-    <h1>Greetings {{username}}</h1>
+    {% extends 'base.html' %}
+    {%block title%}Greeter V2 {% endblock %}
+    {% block page_name %}Complimentary Candy<br>{% endblock%}
+    {% block content%}
+    <h2>Greetings {{username}}</h2>
     {% if wants=="on" %}
     <table>
         <tr>
@@ -34,4 +23,4 @@
         </ul>
     </table>    
     {% endif %}
-</html>
+    {% endblock %}
